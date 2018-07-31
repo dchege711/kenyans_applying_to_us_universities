@@ -4,9 +4,9 @@
 
 * [How to publish new articles](#how-to-publish-new-articles)
 
-The test instance is running at [https://applicants-254.herokuapp.com/](https://applicants-254.herokuapp.com/) from the `prod` branch.
-
 ## To-do List
+
+<sub><sup>[:arrow_up: Back to top](#contents)</sup></sub>
 
 If you have some time on your hands, help us achieve any of the following. We're welcome to pull requests and suggestions on how to imporove this project.
 
@@ -28,7 +28,9 @@ If you have some time on your hands, help us achieve any of the following. We're
 
 ## How to Publish New Articles
 
-1. Write an appropriate markdown document in `./posts_markdown/`. Include relevant metadata at the top of the markdown document. Please name your .md file in this format: `YYYY-MM-DD-title.md`. For instance, in `./posts_markdown/2017-06-03-new-sat-rentals-available.md`, you might have metadata of the form:
+<sub><sup>[:arrow_up: Back to top](#contents)</sup></sub>
+
+1. Write an appropriate markdown document in `./posts_markdown/`. Include relevant metadata at the top of the markdown document. Please name your .md file in this format: `YYYY-MM-DD-title.md`. For instance, in `./posts_markdown/2017-06-03-new-sat-rentals-available.md`, you might have metadata:
 
     ```markdown
     ---
@@ -40,6 +42,8 @@ If you have some time on your hands, help us achieve any of the following. We're
     abstract: We now have Princeton Review prep books for Math IC and Math IIC, and Barron's prep books for Biology E/M and Chemistry.
 
     ---
+
+    We're now offering SAT Prep Books...{Rest of the Document}
     ```
 
-1. From the root folder, run `$ node markdown_to_HTML.js blog-posts/YYYY-MM-DD-title.md` to create a complete HTML document. If you change the markdown document from step 1, re-run step 2 to ensure that the generated HTML documents are up to date.
+2. Add an hyperlink in the appropriate section of `./partials/navbar.ejs`.
