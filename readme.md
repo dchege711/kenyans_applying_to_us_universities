@@ -4,6 +4,10 @@
 
 * [How to publish new articles](#how-to-publish-new-articles)
 
+## Deploying the Site on Heroku
+
+Run `$ git push origin running-on-heroku`. Heroku is listening to any pushes on this branch.
+
 ## To-do List
 
 <sub><sup>[:arrow_up: Back to top](#contents)</sup></sub>
