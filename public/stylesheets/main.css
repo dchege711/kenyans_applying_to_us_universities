@@ -122,6 +122,21 @@ body {
     float:right!important
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
 /* If the browser window reduces in size, remove the padding 
  * from the main content */
 @media screen and (max-width: 900px) {

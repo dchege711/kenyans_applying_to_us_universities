@@ -1,3 +1,5 @@
+> Note: On this branch, only edit stuff related to Heroku deployments. Any logical or content changes should be pulled from the `master` branch.
+
 # Contents
 
 * [Deploying the Site](#deploying-the-site)
