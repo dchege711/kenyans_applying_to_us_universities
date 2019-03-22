@@ -37,6 +37,18 @@ app.get('/about', (request, response) => {
     response.render('pages/about_page');
 });
 
+app.get('/become-a-reviewer', (request, response) => {
+    response.render('pages/become_a_reviewer');
+});
+
+app.get('/request-a-reviewer', (request, response) => {
+    response.render('pages/request_essay_reviews');
+});
+
+app.use(function (req, res, next) {
+    res.status(404).render("pages/4xx_error_page");
+});
+
 app.listen(port, () => {
     console.log(`App is running on port ${port}`);
 });
