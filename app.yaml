@@ -1,2 +1,13 @@
-env: flex
-runtime: nodejs
+runtime: nodejs8
+env: standard
+instance_class: F1
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
+    redirect_http_response_code: '301'
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: automatic
+  min_pending_latency: automatic
+  max_pending_latency: automatic
